@@ -27,7 +27,7 @@ const UserModule = () => {
         if (!window.confirm("Are you sure you want to delete this mail?")) return;
 
         try {
-            const response = await fetch(`http://localhost:5000/api/emails/${id}`, {
+            const response = await fetch(`https://sendingemailserver01.onrender.com/api/emails/${id}`, {
                 method: 'DELETE',
             });
 
